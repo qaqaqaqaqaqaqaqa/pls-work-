@@ -16,11 +16,11 @@ function formatAndSendTweet(event) {
   const formattedUsdPrice = (formattedTokenPrice * usdValue).toFixed(2);
   const formattedPriceSymbol = tokenSymbol === 'WETH' || tokenSymbol === 'ETH' ? 'Ξ' : ` ${tokenSymbol}`;
 
-  const tweetText = `🍻 ${tokenName} just sold for ${formattedTokenPrice}${formattedPriceSymbol} ($${formattedUsdPrice}) #drunkpunks #altpunks ${openseaLink}`;
+  const tweetText = `🐨 ${tokenName} just sold for ${formattedTokenPrice}${formattedPriceSymbol} ($${formattedUsdPrice}) #krazykoalanft ${openseaLink}`;
 
-// 🍻 DrunkPunk #12 just sold for Ξ0.25 ($779.60)
-// https://etherscan.io/tx/0xc73270305a597552599faa0b53ab6af083a5e0ad2ad3582f2e421ce9de16b6cd
-// #drunkpunks #altpunks
+// 🐨 Krazy Koala #5066 just sold for Ξ0.035 ($118.88)
+// https://etherscan.io/tx/0xf03308b470ced59ec745812b2f8194369d609a8c3d79cb6fb445506fdff1885f
+// #krazykoalanft
 
   console.log(tweetText);
 
